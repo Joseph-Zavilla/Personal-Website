@@ -1,0 +1,18 @@
+/* Basic page rules */
+body {
+  margin: 20px;
+  padding: 0;
+}
+
+/* Masonry container */
+.container {
+  column-width: 250px; /* auto responsive columns */
+  column-gap: 10px;
+}
+
+/* Images */
+.container img {
+  width: 100%;
+  margin-bottom: 10px;
+  display: block;
+}

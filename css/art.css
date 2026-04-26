@@ -1,6 +1,7 @@
 body {
   margin: 20px;
   padding: 0;
+  background-color: rgb(0, 0, 0);
 }
 
 .container {
@@ -12,4 +13,29 @@ body {
   width: 100%;
   margin-bottom: 10px;
   display: block;
+}
+
+.gallery a img {
+  cursor: pointer;
+}
+
+.gallery a:hover img {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+h1 {
+  color: rgb(224, 223, 221);
+  text-align: center;
+  font-size: 100px;
+  font-family:sans-serif
+}
+
+h2 {
+  color: rgb(224, 223, 221);
+  text-align: right;
+  font-size: xx-large;
+  font-family: ss
+  
+}
 }

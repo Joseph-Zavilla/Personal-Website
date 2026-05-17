@@ -4,8 +4,16 @@
     <title>REVIEW. EVERY. THING.</title>
   </head>
   <body>
-    <h5><a href="/index.html">Home</a></h5>
+    <div id="header"></div>
     <h1>REVIEW. EVERY. THING.</h1>
     <p>Work in progress...</p>
+
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
   </body>
 </html>

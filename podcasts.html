@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <title>Podcasts</title>
   </head>
   <body>
-    <h5><a href="/index.html">Home</a></h5>
+    <div id="header"></div>
     <h1>Podcasts</h1>
     <h3>Zoo: The Show: The Podcast</h3>
     <p>
@@ -16,5 +16,13 @@
       href="https://podcasts.apple.com/us/podcast/zoo-the-show-the-podcast/id1467410972"
       >Apple</a
     >
+
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
   </body>
 </html>

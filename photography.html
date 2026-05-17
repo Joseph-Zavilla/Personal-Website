@@ -9,7 +9,7 @@
     />
   </head>
   <body>
-    <h1>Photography</h1>
+    <div id="header"></div>
     <div class="gallery">
       <div class="container">
         <a href="/Photography/1.jpg" data-caption="existing feels good.">
@@ -136,6 +136,14 @@
     <script src="https://cdn.jsdelivr.net/npm/baguettebox.js/dist/baguetteBox.min.js"></script>
     <script>
       baguetteBox.run(".gallery");
+    </script>
+
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
     </script>
   </body>
 </html>

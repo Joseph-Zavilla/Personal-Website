@@ -4,9 +4,13 @@
     <title>Changelog</title>
   </head>
   <body>
-    <h5><a href="/index.html">Home</a></h5>
+    <div id="header"></div>
     <h1>Changelog</h1>
     <ul>
+      <li>
+        5.17.26: Made improved and consistant headers, replaced home page with
+        about page.
+      </li>
       <li>
         5.12.26: Made same improvements to digital art page, added captions,
         some aesthetic changes.
@@ -43,5 +47,13 @@
         my instagram and email. Started making page for photography.
       </li>
     </ul>
+
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
   </body>
 </html>

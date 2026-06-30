@@ -5,7 +5,6 @@
   </head>
   <body>
     <div id="header"></div>
-    <h3>Writing</h3>
     <p>"UNDER CONSTRUCTION"</p>
 
     <script>
@@ -13,7 +12,36 @@
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("header").innerHTML = data;
+
+          // Run active navigation after header exists
+          const currentPage = window.location.pathname.split("/").pop();
+
+          document.querySelectorAll(".navigation a").forEach((link) => {
+            const linkPage = link.getAttribute("href").split("/").pop();
+
+            if (linkPage === currentPage) {
+              link.classList.add("active");
+            }
+          });
         });
+    </script>
+    <script>
+      console.log("NAV SCRIPT RUNNING");
+
+      const currentPage = window.location.pathname.split("/").pop();
+
+      console.log("Current page:", currentPage);
+      console.log(document.querySelectorAll(".navigation a"));
+      document.querySelectorAll(".navigation a").forEach((link) => {
+        const linkPage = link.getAttribute("href").split("/").pop();
+
+        console.log(linkPage);
+
+        if (linkPage === currentPage) {
+          console.log("MATCH FOUND:", linkPage);
+          link.classList.add("active");
+        }
+      });
     </script>
   </body>
 </html>

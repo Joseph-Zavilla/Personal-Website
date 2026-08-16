@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>MOVIE TITLE Review</title>
+
+    <link rel="stylesheet" href="../css/reviews.css" />
+  </head>
+
+  <body>
+    <div id="header"></div>
+
+    <main class="review">
+      <a href="moviereviews.html">Back</a>
+      <h1>MOVIE TITLE</h1>
+
+      <div class="movie-info">
+        <img src="../movieposters/movieposter.webp" alt="MOVIE TITLE poster" />
+
+        <div>
+          <p><strong>Year:</strong> YEAR</p>
+          <p><strong>Director:</strong> DIRECTOR</p>
+          <p><strong>Reviewed:</strong> DATE</p>
+        </div>
+      </div>
+
+      <article>
+        <p>Your review goes here.</p>
+
+        <p>Second paragraph.</p>
+      </article>
+    </main>
+
+    <script>
+      fetch("../header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
+
+<!-- Poster width 300, height 450, webp-->

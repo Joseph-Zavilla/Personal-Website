@@ -6,5 +6,29 @@
     "director": "Jyllian Gunther Stephanie Schwam",
     "poster": "movieposters/bangmybox.webp",
     "url": "Review Pages/bangmybox.html"
+  },
+  {
+    "title": "The Ainsley McGregor Mysteries: A Case for The Yarn Maker",
+    "year": 2025,
+    "reviewdate": "2026-08-18",
+    "director": "Martin Wood",
+    "poster": "movieposters/acasefortheyarnmaker.webp",
+    "url": "Review Pages/a-case-for-the-yarnmaker.html"
+  },
+  {
+    "title": "How to Make a Killing",
+    "year": 2026,
+    "reviewdate": "2026-07-20",
+    "director": "John Patton Ford",
+    "poster": "movieposters/howtomakeakilling.webp",
+    "url": "Review Pages/how-to-make-a-killing.html"
+  },
+  {
+    "title": "David Lynch: The Art Life",
+    "year": 2016,
+    "reviewdate": "2026-08-03",
+    "director": "Jon Nguyen Rick Barnes",
+    "poster": "movieposters/davidlynchtheartlife.webp",
+    "url": "Review Pages/david-lynch-art-life.html"
   }
 ]
